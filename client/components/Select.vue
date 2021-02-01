@@ -1,5 +1,4 @@
 <template>
-  <!-- <div> -->
   <div class="relative">
     <select ref="select" :value="value" :disabled="disabled" @change="onChange">
       <option :value="defaultValue">{{ defaultName }}</option>
@@ -12,16 +11,11 @@
       </option>
     </select>
   </div>
-  <!-- </div> -->
 </template>
 
 <script>
 export default {
   props: {
-    // label: {
-    //   type: String,
-    //   default: '',
-    // },
     defaultName: {
       type: String,
       default: '',
@@ -44,10 +38,6 @@ export default {
       type: String,
       default: '',
     },
-    // size: {
-    //   type: String,
-    //   default: 'sm',
-    // },
     value: {
       type: [String, Number],
       default: '',
